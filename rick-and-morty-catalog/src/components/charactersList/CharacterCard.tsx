@@ -6,16 +6,15 @@ interface CharacterCardProps {
 }
 
 const CharacterCard = ({ character }: CharacterCardProps) => {
-
-
     return (
-
         <div
             className="border-4 bg-green-400 
                 shadow-md rounded-lg"
         >
-            <img className="w-full rounded-msm" src={character.image}
-                alt={character.name} />
+            <div className="bg-gray-200 w-full ">
+                <img className="w-full rounded-lg" src={character.image}
+                    alt={character.name} />
+            </div>
 
             <h1 className="flex-1 flex mt-2 font-medium items-center 
                 justify-center text-center">
